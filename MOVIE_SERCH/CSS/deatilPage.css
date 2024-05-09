@@ -1,0 +1,409 @@
+/*
+
+
+최종 편집자 : 안홍걸
+
+
+
+
+
+
+*/
+@import "./colors.css";
+
+::-webkit-scrollbar {
+  display: none;
+  /* 웹킷(Chrome, Safari) 브라우저에서만 수직 스크롤바 감춤 */
+}
+
+body {
+  background-color: var(--backGround);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 네비게이션바 */
+.navbar {
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  background-color: var(--backGround) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 80px;
+  padding: 0px;
+  z-index: 1;
+}
+
+.container-fluid {
+  max-height: 45px;
+}
+
+.navbar-brand {
+  max-height: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.d-flex {
+  width: 300px;
+  height: 35px;
+}
+
+#btn_submit {
+  font-size: 15px;
+  width: 100px;
+}
+
+.home {
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+
+/* 상단 포스터 부분 */
+.movieContainer {
+  padding: 50px;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--pinkLight);
+  width: 100vw;
+  height: 80vh;
+}
+
+.moviePoster,
+.movieInfo {
+  overflow: hidden;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--pinkLight);
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.movieTitle {
+  font-size: 50px;
+}
+
+.movieRelease {
+  font-size: 30px;
+}
+
+.movieDirector {
+  font-size: 20px;
+}
+
+.movieMaker {
+  font-size: 15px;
+}
+
+/* ------------- */
+.underContainer {
+  margin-top: 10vh;
+  /*윗부분 제작시 삭제*/
+  flex-direction: column;
+  width: 60vw;
+  /* min-width: 60%; */
+  height: auto;
+  background-color: var(--pinkDark);
+}
+
+/* 주요정보 탭, 평점 리뷰 탭 */
+.underBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 40px;
+  border-radius: 5px;
+  height: 450px;
+}
+
+.underButtonContainer {
+  width: auto;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+.form-floating {
+  box-shadow: 2px 2px 3px var(--pinkDark);
+  /*input 태그들 그림자설정*/
+  margin-top: 5px;
+  z-index: 0;
+}
+.youtube{
+  width: auto;
+  height: 50%;
+}
+.underInfoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+}
+
+.overView {
+  overflow-y: auto;
+  height: 100%;
+  padding: 20px;
+  border-bottom: 0.1px solid var(--pinkDark);
+}
+
+/* .movieInfo {
+}
+#movieInfoAge {
+}
+#moveInfoRelease {
+}
+#movieInfoGenre {
+}
+#moveInfoDirector {
+}
+#movieInfoCast {
+} */
+/*--------------------*/
+
+.underReviewForm {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  width: 40vw;
+  margin: 20px;
+}
+
+.underButtonInfo {
+  /* 주요 정보 이동 버튼*/
+  background-color: var(--pinkDark);
+  height: 40px;
+  width: 50%;
+  text-align: center;
+
+  padding-top: 7px;
+}
+
+.underButtonReview {
+  /* 평점 리뷰 이동 버튼*/
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  text-align: center;
+  padding-top: 7px;
+}
+
+#movieScoreInput {
+  /*별점 매기는 슬라이더 디자인*/
+  margin-top: 10px;
+}
+
+#saveReview {
+  /*평점 작성 버튼 */
+  background-color: var(--pinkDark);
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+}
+
+/*최신순 평점순 버튼 디자인*/
+.underOderBox {
+  background-color: var(--pinkDark);
+  width: 100%;
+  height: 0px;
+}
+
+#oderLastest {
+  display: none;
+}
+
+#oderScore {
+  display: none;
+}
+
+/*-------------------------------*/
+
+/*작성완료된 리뷰를 모아두는 컨테이너*/
+.underReviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+}
+
+.underReview {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 400px;
+  height: 30vh;
+}
+
+/*-------------------------------- */
+
+/*반짝거리는 버튼ㅋㅋ*/
+.glow-on-hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: 100%;
+  /* 수정된 부분 */
+  height: 100%;
+  /* 수정된 부분 */
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* 수정된 부분 */
+  height: 100%;
+  /* 수정된 부분 */
+  background: var(--pinkDark);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*-------------------- */
+
+#card_top {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+
+  height: 80%;
+}
+#card_bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 10%;
+  margin-left: 10px;
+}
+
+/* 수정 삭제 기능시 나오는 모달?창 */
+.greyScreen{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.UDbox{
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  background-color: var(--pinkLight);
+  padding:20px;
+  border-radius: 10px;
+  border:1px solid black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+.updateBox{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.btnCancel,.btnSubmit{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.btnCancel{
+  background-color: var(--pinkDark);
+}
+.btnSubmit{
+  background-color: rgba(50, 248, 50, 0.518);
+}
+.btnBox{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.deleteBox{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "team_project_no.2",
+  "version": "1.0.0",
+  "description": "부트캠프 두번째 팀 프로젝트로,영화 소개 페이지,영화 상세 페이지등을 구현합니다",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+    --pinkLight: #F2BDC7;
+    --pinkMedium: #D96C9F;
+    --pinkDark: #D96F66;
+    --backGround: #402028;
+    --inputBox: #746969;
+    --reviewStar: #FFDC7B;
+
+}
+
+/* 사용 방법
+@import "CSS/colors.css"; //위치 정보가 맞는지 꼭 확인!
+
+body {
+  background-color: var(--backGround);
+}
+
+.button {
+  background-color: var(--backGround);
+  color: var(--pinkDark);
+}
+*/

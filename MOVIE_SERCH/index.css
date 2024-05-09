@@ -1,0 +1,258 @@
+@import "CSS/colors.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--backGround);
+  width: 100vw;
+  height: auto;
+}
+.vote{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: absolute;
+  border:1px solid var(--pinkDark);
+  background-color: white;
+  color:black;
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+  overflow: hidden;
+  right:5%;
+  top: 1%;
+}
+
+.button {
+  background-color: var(--backGround);
+  color: var(--pinkDark);
+}
+/*01_네비게이션*/
+#navbar {
+  z-index: 10;
+  position: fixed;
+  top:0px;
+  width: 100vw;
+  border-bottom: 1px solid var( --pinkLight);
+}
+.navbar-brand{
+  background-color:var( --pinkLight);
+  
+  width: 10%;
+  height: 80%;
+}
+#btn_submit{
+  background-color: var(--inputBox);
+  color:var(--pinkDark);
+}
+/*01_네비게이션 배경색*/
+.bg-light {
+  background-color: var(--backGround) !important;
+}
+
+/*02_1 영화 포스터, 간단한 내용 보여주기*/
+.movieBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: var(--pinkLight);
+  margin-top: 80px; 
+  padding:0px 90px;
+}
+.moviePoster {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 420px;
+  height: 600px;
+  /*background-color: var(--pinkDark); 구성완료시 없앨것임*/
+  border-radius: 10px;
+}
+.posterTitle {
+  font-size: 70px;
+}
+
+/*02_2 영화 연령고지, 개봉년도*/
+.ageYear {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.ageImg {
+  width: 40px;
+  height: auto;
+}
+.movieYear {
+  padding-left: 10px;
+  display: inline-block;
+  font-size: 30px;
+}
+.movieReview {
+  color: black;
+  font-size: 30px;
+}
+.bxs-star {
+  color: var(--reviewStar);
+}
+
+/*02_3 영화 포스터사진 넣을때 크기*/
+.imgBox {
+  width: 420px;
+  height: 600px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.imgBox>img{
+  max-width: 420px;
+  height: auto;
+}
+
+/*02_4 사진 슬라이드 할때 버튼*/
+.boxBtn{
+  position: absolute;
+  bottom:100px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.btnLine {
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  /*보여주는 영화 포스터면 --pinkMedium 색상
+  and
+  대기중은 영화 포스터면 #ffffff 색상*/
+  background-color: var(--pinkMedium);
+  cursor: pointer;
+}
+
+/*03_1 오늘의 영화 버튼구역*/
+.todayAll {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 90px;
+  margin-top: 10px;
+}
+.todayMovieTop {
+  font-size: 40px;
+  color: white;
+  width: 420px;
+}
+.todayMovieBtn {
+  width: 160px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--pinkDark); 
+  display: inline-block;
+  margin-left: 210px;
+}
+
+/*03_2오늘의 영화 TOP*/
+.todayMovie {
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 50px 10px;
+  justify-content: space-around;
+}
+.todayMoviePosterBox{
+  padding-bottom: 20px;
+  position: sticky;
+  z-index: 0;
+}
+.todayMoviePoster{
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: white; 
+  margin: 0px 10px ;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.todayMovieTitle {
+  max-width: 300px;
+  color: black;
+  background-color: white; 
+  text-align: center;
+  overflow: hidden;
+  margin:0px 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px var(--pinkLight);
+}
+/*04_1 이번주의 영화 TOP 버튼구역*/
+.weekAll {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 60px;
+  padding: 0px 90px;
+  
+  margin-top: 10px;
+}
+.weekMovieTop {
+  font-size: 40px;
+  color: white;
+  width: 420px;
+  
+}
+.weekMovieBtn {
+  width: 160px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--pinkDark); 
+  display: inline-block;
+  
+  margin-left: 210px; 
+}
+/*04_2 이번주의 영화 TOP*/
+.weekMovie {
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 50px 10px;
+  justify-content: space-around;
+}
+.weekMoviePosterBox{
+  position: sticky;
+  z-index: 0;
+}
+.weekMoviePoster{
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: white; 
+  margin: 0px 10px ;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.weekMovieTitle {
+  max-width: 300px;
+  color: black;
+  background-color: white; 
+  text-align: center;
+  overflow: hidden;
+  margin:0px 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px var(--pinkLight);
+}
+
+/*05_footer Copyright*/
+.copy {
+  text-align: center;
+  padding: 30px;
+  color: var(--pinkDark);
+  background-color: var(--pinkLight);
+}
