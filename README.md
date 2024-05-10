@@ -7,6 +7,9 @@
 - 자바스크립트 문법 활용 능력 향상
 - 바닐라 JS로 결과물을 온전히 만드는 경험
 
+### 팀명 
+산미있는 원두
+
 ### 팀원구성
 - 팀장 : 안홍걸 @[4cozm](https://github.com/4cozm)
 - 팀원 : 김동규 @[Kdkplaton](https://github.com/Kdkplaton)
