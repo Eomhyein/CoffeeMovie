@@ -1,23 +1,23 @@
 ### 🎥프로젝트 소개
 : 자바스크립트로 영화 소개 페이지, 영화 상세 페이지 제작
-시연영상 : https://youtu.be/wLYU51tA4D8
-팀 깃허브 : https://github.com/4cozm/Team_Project_No.2
+- 시연영상 : https://youtu.be/wLYU51tA4D8
+- 팀 깃허브 : https://github.com/4cozm/Team_Project_No.2
 
 ### 프로젝트 목적
 - 자바스크립트 문법 활용 능력 향상
 - 바닐라 JS로 결과물을 온전히 만드는 경험
 
 ### 팀원구성
-팀장 : 안홍걸 @[4cozm](https://github.com/4cozm)
-팀원 : 김동규 @[Kdkplaton](https://github.com/Kdkplaton)
-팀원 : 정서윤 @[YOON0425](https://github.com/YOON0425)
-팀원 : 엄혜인 @[Eomhyein](https://github.com/Eomhyein)
+- 팀장 : 안홍걸 @[4cozm](https://github.com/4cozm)
+- 팀원 : 김동규 @[Kdkplaton](https://github.com/Kdkplaton)
+- 팀원 : 정서윤 @[YOON0425](https://github.com/YOON0425)
+- 팀원 : 엄혜인 @[Eomhyein](https://github.com/Eomhyein)
 
 ### 1. 개발기간
-2024.05.02 (목) ~05.09 (목)
+- 2024.05.02 (목) ~05.09 (목)
 
 ### 2. 개발환경
-HTML, CSS, JavaScript
+- HTML, CSS, JavaScript
 
 ### 3. 역할분배
 안홍걸 - 상세페이지 HTML & CSS 구현
@@ -28,7 +28,8 @@ HTML, CSS, JavaScript
 ## **세부적으로는 팀 깃 허브에 Projects - 전체 프로젝트 개요에 적혀있음**
 
 ### 4. 와이어프레임
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/3634dbc4-bfbd-4987-bf3f-b941f6edcf83/Untitled.png)
+![와이어프레임 상세설명](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/47c71d58-3b8e-439f-a461-e0746eb22615)
+
 
 ### 5. API문서 
 ## [function.js]
@@ -58,22 +59,25 @@ HTML, CSS, JavaScript
 
 ### 6. 페이지 사진
 **1) 메인페이지**
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/6465fdac-92d4-4c91-871d-9ec3d44feff7/Untitled.png)
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/7728f654-9bec-4957-b014-9d073bc06d46/Untitled.png)
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/cd013576-f557-4ce8-b7ef-66bd45bd914a/Untitled.png)
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/e856b089-93a7-4cbb-81d4-3e7313fda950/Untitled.png)
+![01_메인페이지](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/5ef2c0ff-c8a8-4da6-972e-b7870cc3f3ab)
+![02_메인페이지](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/07fa3855-5bed-4b17-a76d-5b2ae3bf6c93)
+![03_메인페이지](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/60266427-eaee-4cfd-939c-d1abb393a6f6)
+![04_메인페이지](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/678688b5-5ce5-435e-9fd9-ee4a817563aa)
 
 **2) 전체보기 페이지**
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/fc7ef023-d193-4fc8-8cc1-df34508ee174/Untitled.png)
+![01_전체페이지](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/588bd14c-9c1f-4c38-ac99-6935c6b39848)
 
-**3) 상세페이지 주요기능**
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/188ac683-43f9-49e0-b0fa-0d7c7894e08d/Untitled.png)
+**3) 상세페이지 주요정보**
+![03_상세페이지_주요내용](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/2d956375-0afb-4a60-bdaf-a4420e7b4f78)
 
 **4) 상세페이지 평점리뷰**
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1f8094c-b9c4-4903-b82b-ffae8ff457e6/73f7d60b-1ae3-451c-a1f3-0feef58ba997/Untitled.png)
+![04_상세페이지_평점리뷰](https://github.com/Eomhyein/CoffeeMovie/assets/26666131/865dbc03-27f1-42e2-b7e6-43e5ca6e81d0)
+
 
 **7. 어려웠던 점**
-1) JQuery 대신 순수 자바스크립트로 구현하는데 어려움을 겪게됨
-2) 버그가 빠르게 해결되지 않아 시간이 낭비됨
+- JQuery 대신 순수 자바스크립트로 구현하는데 어려움을 겪게됨
+- 버그가 빠르게 해결되지 않아 시간이 낭비됨
 
-개인적으로는 자바스크립트 사용에 익숙하지 않아 
+[엄혜인 (개인)]
+- 자바스크립트 사용에 익숙하지 않아 API를 불러오는 것 조차 몰라 곤란했음
+- 팀원들의 코드를 이해하기 어려웠음
